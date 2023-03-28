@@ -1,1 +1,1 @@
-# Test
+# QR-generator-scanner

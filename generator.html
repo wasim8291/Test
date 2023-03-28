@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="css/generator_style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Include from the CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>QR Code Generator</h1>
+      <p>Paste a url or enter text to create QR code</p>
+    </header>
+    <div class="form">
+      <input type="text" spellcheck="false" placeholder="Enter text or url">
+      <button>Generate QR Code</button>
+    </div>
+    <div class="qr-code" id="QRImage">
+      <img src="" alt="qr-code">
+    </div>
+
+    <div class="download">
+      <!-- Full width -->
+      <a id="download" onclick="DownloadQR();"><button class="btn" style="width:100%"><i class="fa fa-download"></i>Download</button></a>
+    </div>
+  </div>
+
+  <script src="js/generator_script.js"></script>
+ 
+  <script>
+    function DownloadQR(){
+      let screenTarget = document.getElementById('QRImage');
+
+      html2canvas(screenTarget,{
+        allowTaint : true,
+        useCORS : true
+      }).then(canvas => {
+      let baseurl = canvas.toDataURL('image/jpg');
+      let link = document.createElement('a');
+      link.setAttribute('href', baseurl)
+      link.setAttribute('download', 'qr.jpg');
+      link.click();
+      link.remove();
+    })
+    }
+  </script>
+
+</body>
+
+</html>

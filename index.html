@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Qr code generator/Scanner</title>
+</head>
+
+<body>
+
+    <!-- //bar section is here  -->
+    <nav class="navbar">
+
+        <input type="checkbox" name="navbar_responsive_checkbox" id="checkbox_for_nav">
+        <label for="checkbox_for_nav" id="icon_responsive"><i class="fa-solid fa-bars"></i></label>
+
+        <label class="logo"><a href="index.html">Qr code generator/Scanner</a></label>
+        <ul class="nav_element">
+            <li><a href="#home" class="element active">home</a>
+            </li>
+            <li><a href="#service" class="element">services</a>
+            </li>
+            <li><a href="#contact" class="element"> Contact Us</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <div class="line"></div>
+
+
+    <!-- //background section  -->
+    <div class="bg" id="home">
+        <dib class="bg_layer">
+            <p class="bg_text_big">Scan, Create, Connect.</p>
+            <p class="bg_text_small">Simplify your QR code experience.</p>
+            <button class="btn"><a href="button.html">Generate/Scan QR
+                </a></button>
+        </dib>
+    </div>
+
+
+
+    <!-- //services section  -->
+    <section>
+        <div class="cardrow_container" id="service">
+
+            <!-- //row one  -->
+            <div class="cardrow">
+                <div class="card_text">
+                    <p class="card_text_big">QR codes that work for you.</p>
+                    <p class="card_text_small">
+                        Our generator and scanner are designed to make the process of creating and using
+                        QR codes as simple and efficient as possible.</p>
+
+                    <a href="button.html" id="build_resume_btn_in_card_section">generate/scan QR</a>
+                </div>
+                <div class="card_image">
+                    <img src="img/first.jpg" alt="laptop image" class="imgFluid">
+                </div>
+            </div>
+
+
+            <!-- //row two  -->
+            <div class="cardrow-second">
+                <div class="card_text">
+                    <p class="card_text_big">Unlimited Scans And Generates.</p>
+                    <p class="card_text_small">
+                        Our QR code generator/scanner allows you to create and scan as many QR codes as you need,
+                        without any limits or restrictions.
+                    </p>
+
+
+
+
+
+                    <a href="button.html" id="build_resume_btn_in_card_section">generate/scan QR</a>
+                </div>
+                <div class="card_image">
+                    <img src="img/second.jpg" alt="laptop image" class="imgFluid">
+                </div>
+            </div>
+
+
+
+            <!-- //row three  -->
+            <div class="cardrow">
+                <div class="card_text">
+                    <p class="card_text_big">Ads Free And Fully Responsive.
+                    </p>
+                    <p class="card_text_small">
+                        Our website is completely
+                         free of any advertisements or distractions that
+                        could interfere with your user experience
+                        , Thanks Us later ;)
+                    </p>
+
+                    <a href="button.html" id="build_resume_btn_in_card_section">generate/scan QR</a>
+                </div>
+                <div class="card_image">
+                    <img src="img/third.png" alt="laptop image" class="imgFluid">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- //contact us section  -->
+
+    <div class="form" id="contact">
+        <form id="form_data">
+            <p>Contact Us</p>
+            <div class="form_element">
+                <input type="text" name="name" placeholder="Full Name" id="name" required>
+                <input type="email" name="email" id="email" placeholder="Email ID" required>
+                <input type="number" name="number" placeholder="Phone Number" id="Number" required>
+                <textarea name="massage" id="massage" placeholder="Write Your Massage.."></textarea>
+                <input type="submit" value="submit" id="submit">
+            </div>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/wasimhere8433/" class="social-icon social-icon--codepen">
+                <i class="fa-brands fa-facebook"></i>
+                <div class="tooltip">Facebook</div>
+            </a>
+
+            </a>
+            <a href="https://www.instagram.com/wasim_here__" class="social-icon social-icon--instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <div class="tooltip">Instagram</div>
+            </a>
+            <a href="https://twitter.com/wasimhere8291/" class="social-icon social-icon--twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <div class="tooltip">Twitter</div>
+
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- //footer is here  -->
+    <footer class="footer">
+        <p class="footer_text">
+            Copyright &copy;2022 - www.QRgenerator/scanner.com All rights reserved
+        </p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="store_data.js"></script>
+</body>
+
+</html>
