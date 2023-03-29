@@ -128,3 +128,27 @@ header p{
     width: 160px;
   }  
 }
+
+.goBackbtn {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 1%;
+}
+
+#back {
+  width: 200px;
+  padding: 4px;
+  background-color: aqua;
+  font-size: 2.9vh;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition-duration: .5s;
+  border: 1px solid black;
+}
+
+#back:hover {
+  background-color: floralwhite;
+  color: #fff;
+}
